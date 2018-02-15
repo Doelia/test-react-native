@@ -9,9 +9,12 @@ const styles = {
     },
     input: {
         paddingTop: 10,
-        paddingBottom: 20,
+        marginBottom: 10,
+        paddingBottom: 10,
         paddingHorizontal: 5,
-        fontSize: 20
+        fontSize: 20,
+        borderBottomWidth: 0.5,
+        borderColor: '#d6d7da',
     }
 };
 
@@ -35,20 +38,20 @@ class FormPage extends React.Component {
 
     render() {
         return (
-            <View style={{padding: 20}}>
-                <Text style={ styles.label }> Email : </Text>
-                <TextInput style={ styles.input } placeholder="Email" />
-                <Text style={ styles.label }> Name : </Text>
-                <TextInput style={ styles.input } placeholder="Name" />
-                <Text style={ styles.label }> Color : </Text>
-                <Picker>
-                    <Picker.Item label="Red" value="java" />
-                    <Picker.Item label="Yellow" value="js" />
-                </Picker>
+            <View style={{padding: 20, backgroundColor: 'white'}}>
+                <Text style={ styles.label }> Email </Text>
+                <TextInput style={ styles.input } placeholder="<type here>" />
+                <Text style={ styles.label }> Name </Text>
+                <TextInput style={ styles.input } placeholder="<type here>" />
+                {/*<Text style={ styles.label }> Color : </Text>*/}
+                {/*<Picker>*/}
+                    {/*<Picker.Item label="Red" value="java" />*/}
+                    {/*<Picker.Item label="Yellow" value="js" />*/}
+                {/*</Picker>*/}
                 <Button
                     onPress={() => { this.boom() } }
-                    title="Alert popup"
-                    color="#841584"
+                    title="Confirm"
+                    color="#007AFF"
                 />
             </View>
         )

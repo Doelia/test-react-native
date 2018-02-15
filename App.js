@@ -6,8 +6,8 @@ import FormPage from "./src/FormPage";
 import ListPage from "./src/ListPage";
 
 const Tabs = TabNavigator({
-    Form: { screen: FormPage },
     Map: { screen: MapPage },
+    Form: { screen: FormPage },
     List: { screen: ListPage },
 }, {
     tabBarOptions: {
